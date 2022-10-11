@@ -1,0 +1,19 @@
+[package]
+name = "rust_auth_server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4"
+actix-rt = "2"
+config = "0.13.2"
+dotenv = "0.15"
+serde = { version = "1", features = ["derive"] }
+eyre = "0.6"
+color-eyre = "0.6.2"
+tracing = "0.1"
+tracing-futures = "0.2"
+tracing-subscriber = {version = "0.3.15", features = ["fmt", "env-filter"]}
+tracing-log = { version = "0.1.2", features = ["env_logger"] }
